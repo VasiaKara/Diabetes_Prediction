@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}The fieldset element{%endblock%}
+
+{% block content %}
+<h1 style="color:rgb(150, 20, 150);">FILL IN THE <br>FOLLOWING <br>SECTIONS:</h1>
+<form action="#" method="post">
+        <p>Age:</p>
+        <p><input style="color:rgb(178, 20, 241)" type="number" name="Age" id="Age" required/></p>
+        <p>BMI:</p>
+        <p><input style="color:rgb(178, 20, 241)" type="float" name="BMI" id="BMI" required/></p>
+        <p>Education:</p>
+        <select id="Educationl" class ="input" style="color:rgb(178, 20, 241)" name = "Education" required/>
+        <option value ="0">8thGrade</option>
+        <option value ="1">9-11thGrade</option>
+        <option value ="2">CollegeGrad</option> 
+        <option value ="3">HighSchool</option>
+        <option value ="4">SomeCollege</option>
+        </select>
+        <br><br>
+        <p>RelationshipStatus:</p>
+        <select id="RelationshipStatus" class ="input" style="color:rgb(178, 20, 241)" name = "RelationshipStatus" required/>
+        <option value ="0">Committed</option>
+        <option value ="1">Single</option>
+        </select>
+        <br><br>
+        <p>SleepHrsNight:</p>
+        <p><input style="color:rgb(178, 20, 241)" type="float" name="SleepHrsNight"" id="SleepHrsNight" required/></p>
+        <p>PhysActive:</p>
+        <select id="PhysActive" class ="input" style="color:rgb(178, 20, 241)" name = "PhysActive" required/>
+        <option value ="0">No</option>
+        <option value ="1">Yes</option>
+        </select>
+        <p>Income:</p>
+        <p><input style="color:rgb(178, 20, 241)" type="float" name="Income"" id="Income" required/></p>
+        <p>Insured:</p>
+        <select id="Insured" class ="input" style="color:rgb(178, 20, 241)" name = "Insured" required/>
+        <option value ="0">No</option>
+        <option value ="1">Yes</option>
+        </select>
+        <p>Blood Pressure:</p>
+        <p><input style="color:rgb(178, 20, 241)" type="float" name="BPDia"" id="BPDia" required/></p>       
+    <p><input type="submit" value="submit"/></p>
+</form>
+{% endblock %}

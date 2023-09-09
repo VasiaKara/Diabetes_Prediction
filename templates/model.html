@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Model Selection{% endblock %}
+
+{% block content %}
+<h1 style="color:rgb(150, 20, 150);">SELECT A MODEL <br>FROM THE <br>DROP-DOWN LIST <br>BELOW:</h1>
+<br>
+<form action="#" method="post">
+  <select id="model" class ="input" style="color:rgb(178, 20, 241)" name = "model">
+    <option value="Decision tree(entropy)">Decision tree(entropy)</option>
+    <option value="Decision tree(gini)">Decision tree(gini)</option>
+    <option value ="Naive Bayes">Naive Bayes</option> 
+    <option value ="SVM">Support Vector Machine</option>
+    <option value ="MLP">Multilayer Perceptron</option>
+  </select>
+  <br><br>
+<p><input type="submit" value="Submit" /></p>
+</form>
+{% endblock %}
